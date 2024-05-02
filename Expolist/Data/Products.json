@@ -1,0 +1,208 @@
+ [
+       {
+           "id": 1,
+           "title": "Land O'Lakes Butter",
+           "category": "Dairy, Eggs & Cheese",
+           "description": "Land O'Lakes Butter Stick Salter 4 Count",
+           "expiration": "10/01/2025",
+           "quantity": "1 LB",
+           "price": 5.84
+       },
+       
+       {
+           "id": 2,
+           "title": "Sour Cream",
+           "category": "Dairy, Eggs and Cheese",
+           "description": "Daisy Sour Cream",
+           "expiration": "5/01/2024",
+           "quantity": "8 Oz",
+           "price": 1.43
+       },
+       
+    {
+        "id": 3,
+        "title": "Apples",
+        "category": "Fruits & Vegetables",
+        "description": "Honeycrsip Apple",
+        "expiration": "10/01/2024",
+        "quantity": "1",
+        "price": 1.00
+    },
+    {
+        "id": 4,
+        "title": "Blueberries",
+        "category": "Fruits & Vegetables",
+        "description": "Blueberries Prepacked",
+        "expiration": "10/01/2024",
+        "quantity": "6 Oz",
+        "price": 1.00
+    },
+    {
+        "id": 5,
+        "title": "Strawberries",
+        "category": "Fruits & Vegetables",
+        "description": "Organic Strawberries Prepacked",
+        "expiration": "10/01/2024",
+        "quantity": "1 Lb",
+        "price": 4.99
+    },
+    
+    {
+        "id": 6,
+        "title": "Lettuce",
+        "category": "Fruits & Vegetables",
+        "description": "Iceberg Lettuce",
+        "expiration": "10/01/2024",
+        "quantity": "1",
+        "price": 1.99
+    },
+    
+    {
+        "id": 8,
+        "title": "Carrot",
+        "category": "Fruits & Vegetables",
+        "description": "Carrots",
+        "expiration": "10/01/2024",
+        "quantity": "1",
+        "price": 1.29
+    },
+    
+    {
+        "id": 8,
+        "title": "Carrot",
+        "category": "Fruits & Vegetables",
+        "description": "Carrots",
+        "expiration": "10/01/2024",
+        "quantity": "1",
+        "price": 1.29
+    },
+    
+    {
+        "id": 9,
+        "title": "Gold Potatoes",
+        "category": "Fruits & Vegetables",
+        "description": "Signature Select Farms Potatoes",
+        "expiration": "10/01/2024",
+        "quantity": "3 LB",
+        "price": 1.29
+    },
+    {
+        "id": 10,
+        "title": "Ground Beef",
+        "category": "Meat & Seafood",
+        "description": "Ground Beef Sirloin 90%",
+        "expiration": "5/01/2024",
+        "quantity": "1.50 LB",
+        "price": 9.74
+    },
+    
+    {
+        "id": 11,
+        "title": "Chicken Breasts",
+        "category": "Meat & Seafood",
+        "description": "Perdue Fresh Boneless Chicken Breasts",
+        "expiration": "5/01/2024",
+        "quantity": "1.50 LB",
+        "price": 5.99
+    },
+    
+    {
+        "id": 12,
+        "title": "Shrip Raw",
+        "category": "Meat & Seafood",
+        "description": "Shrimp Raw 16-20 Count",
+        "expiration": "5/01/2024",
+        "quantity": "1 LB",
+        "price": 13.99
+    },
+    
+    {
+        "id": 13,
+        "title": "Atlantic Salmon",
+        "category": "Meat & Seafood",
+        "description": "Atlantic Salmon Portion",
+        "expiration": "5/01/2024",
+        "quantity": "6 Oz",
+        "price": 6.99
+    },
+    {
+        "id": 14,
+        "title": "White Bread",
+        "category": "Bread & Bakery",
+        "description": "Butternut White Bread",
+        "expiration": "7/01/2024",
+        "quantity": "20 Oz",
+        "price": 3.49
+    },
+    
+    {
+        "id": 15,
+        "title": "Bagle",
+        "category": "Bread & Bakery",
+        "description": "Thomas Everything Bagels",
+        "expiration": "7/01/2024",
+        "quantity": "20 Oz",
+        "price": 4.79
+    },
+    {
+        "id": 16,
+        "title": "Pie",
+        "category": "Bread & Bakery",
+        "description": "Premium French Silk Pie",
+        "expiration": "7/01/2024",
+        "quantity": "9 Inch",
+        "price": 4.79
+    },
+    
+    {
+        "id": 17,
+        "title": "Vanilla Bean Ice Cream",
+        "category": "Frozen Foods",
+        "description": "Deans Country Fresh Vanilla",
+        "expiration": "7/01/2024",
+        "quantity": "48 Oz",
+        "price": 4.00
+    },
+    
+    {
+        "id": 18,
+        "title": "Cheese Pizza",
+        "category": "Frozen Foods",
+        "description": "Home Run Inn Pizza Classic Cheese Frozen",
+        "expiration": "7/01/2024",
+        "quantity": "27 Oz",
+        "price": 7.99
+    },
+    
+    {
+        "id": 19,
+        "title": "Kit Kat Chocalate",
+        "category": "Cookies, Snacks & Candy",
+        "description": "Kit Kat Milk Chocolate Wafer Snack Size Candy Bag",
+        "expiration": "7/01/2030",
+        "quantity": "10.78 Oz",
+        "price": 5.99
+    },
+    
+    {
+        "id": 20,
+        "title": "Milk",
+        "category": "Dairy, Eggs & Cheese",
+        "description": "Reduced Fat 2% Milk",
+        "expiration": "7/01/2030",
+        "quantity": "10.78 Oz",
+        "price": 2.99
+    },
+    
+    {
+        "id": 21,
+        "title": "Eggs",
+        "category": "Dairy, Eggs & Cheese",
+        "description": "Eggs Large",
+        "expiration": "7/01/2030",
+        "quantity": "12",
+        "price": 2.79
+    }
+]
+
+
