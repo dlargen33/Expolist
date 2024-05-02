@@ -33,6 +33,7 @@ class LocationsViewController: UIViewController, Reusable {
     
     private func setupUI() {
         self.title = "Nearby Stores"
+        self.mapView.showsUserLocation = true
     }
     
     private func bind() {
@@ -44,7 +45,6 @@ class LocationsViewController: UIViewController, Reusable {
         } receiveValue: { [weak self] (region,annotations) in
             guard let self else { return }
             DispatchQueue.main.async {
-                self.mapView.showsUserLocation = true
                 self.mapView.setRegion(region, animated: true)
                 self.mapView.addAnnotations(annotations)
             }
