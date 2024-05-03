@@ -24,16 +24,28 @@ class ExpolistTabBarController: UITabBarController {
         let vc: LocationsViewController = LocationsViewController.get()
         let barItem = UITabBarItem(title: "Stores",
                                    image: UIImage(systemName: "location.square"),
-                                   tag: 0)
+                                   tag: 1)
         
         vc.tabBarItem = barItem
         let nav = UINavigationController(rootViewController: vc)
         return nav
     }()
     
+    lazy private var groceryListVC: UINavigationController = {
+        let vc: GroceryListViewController = GroceryListViewController.get()
+        let barItem = UITabBarItem(title: "Grocery List",
+                                   image: UIImage(systemName: "rectangle.and.pencil.and.ellipsis"),
+                                   tag: 2)
+        
+        vc.tabBarItem = barItem
+        let nav = UINavigationController(rootViewController: vc)
+        return nav
+    }()
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        self.viewControllers = [expiredProductsVC, locationsVC]
+        self.viewControllers = [expiredProductsVC, locationsVC, groceryListVC]
     }
     
     override func viewDidLoad() {

@@ -22,9 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func setupNavBar() {
-        /*UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        UINavigationBar.appearance().barTintColor = .red*/
         
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
