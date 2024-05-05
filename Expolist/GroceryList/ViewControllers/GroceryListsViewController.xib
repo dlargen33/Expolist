@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GroceryListsViewController" customModule="Expolist" customModuleProvider="target">
+            <connections>
+                <outlet property="addListButton" destination="cCQ-PZ-BTn" id="bMc-rq-kmP"/>
+                <outlet property="noItemsView" destination="Ycf-3g-RQe" id="9Am-fV-cEG"/>
+                <outlet property="tableView" destination="vFx-nN-AzC" id="Omw-sl-rBP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="666"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ycf-3g-RQe">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="666"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Grocery Lists exists. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGa-Hi-gw1">
+                            <rect key="frame" x="20" y="321.66666666666669" width="353" height="23"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCQ-PZ-BTn">
+                            <rect key="frame" x="179" y="380" width="35" height="34"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Add">
+                                <color key="titleColor" systemColor="systemRedColor"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="DGa-Hi-gw1" secondAttribute="trailing" constant="20" id="dqb-Eh-PnD"/>
+                        <constraint firstItem="DGa-Hi-gw1" firstAttribute="leading" secondItem="Ycf-3g-RQe" secondAttribute="leading" constant="20" id="h3E-3o-dns"/>
+                        <constraint firstItem="cCQ-PZ-BTn" firstAttribute="top" secondItem="DGa-Hi-gw1" secondAttribute="bottom" constant="35.333333333333314" id="iUl-eX-VQN"/>
+                        <constraint firstItem="cCQ-PZ-BTn" firstAttribute="centerX" secondItem="Ycf-3g-RQe" secondAttribute="centerX" id="kIb-iw-e7L"/>
+                        <constraint firstItem="DGa-Hi-gw1" firstAttribute="centerY" secondItem="Ycf-3g-RQe" secondAttribute="centerY" id="lcl-lL-25p"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vFx-nN-AzC">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="666"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vFx-nN-AzC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="F9P-AA-r9C"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vFx-nN-AzC" secondAttribute="trailing" id="Q4r-Q2-LUO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ycf-3g-RQe" secondAttribute="bottom" id="QBB-Fe-EDr"/>
+                <constraint firstItem="vFx-nN-AzC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="THf-qY-X2r"/>
+                <constraint firstItem="Ycf-3g-RQe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="a1m-Bn-LSb"/>
+                <constraint firstItem="Ycf-3g-RQe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="a7T-Wp-gkw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ycf-3g-RQe" secondAttribute="trailing" id="ls9-bN-OLy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vFx-nN-AzC" secondAttribute="bottom" id="moe-mU-kuj"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+            <point key="canvasLocation" x="-147.32824427480915" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

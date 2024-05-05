@@ -32,7 +32,7 @@ class ExpolistTabBarController: UITabBarController {
     }()
     
     lazy private var groceryListVC: UINavigationController = {
-        let vc: GroceryListViewController = GroceryListViewController.get()
+        let vc: GroceryListsViewController = GroceryListsViewController.get()
         let barItem = UITabBarItem(title: "Grocery List",
                                    image: UIImage(systemName: "rectangle.and.pencil.and.ellipsis"),
                                    tag: 2)
