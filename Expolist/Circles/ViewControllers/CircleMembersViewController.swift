@@ -74,7 +74,8 @@ class CircleMembersViewController: UIViewController, Reusable {
         let saveAction = UIAlertAction(title: "Save", style: .default) { [weak self] action in
             guard let self = self,
                   let nameTextField = alertController.textFields?[0],
-                  let name = nameTextField.text else { return }
+                  let name = nameTextField.text,
+                  !name.isEmpty else { return }
             
             let newMember = CircleMember(name: name)
             self.viewModel.addMember(member: newMember)

@@ -90,7 +90,9 @@ class GroceryListViewController: UIViewController, Reusable {
                   let itemNameTxtField = alertController.textFields?[0],
                   let quantityTxtField = alertController.textFields?[1],
                   let name = itemNameTxtField.text,
-                  let qty = quantityTxtField.text else { return }
+                  !name.isEmpty,
+                  let qty = quantityTxtField.text,
+                  !qty.isEmpty else { return }
             
             let item = GroceryItem(name: name, quantity: qty)
             self.viewModel.add(item: item)
