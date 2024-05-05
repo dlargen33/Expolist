@@ -2,7 +2,7 @@
 //  GroceryListCell.swift
 //  Expolist
 //
-//  Created by Donald Largen on 5/4/24.
+//  Created by Donald Largen on 5/5/24.
 //
 
 import UIKit
@@ -10,10 +10,11 @@ import UIKit
 class GroceryListCell: UITableViewCell, Reusable {
 
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var itemCountLabel: UILabel!
+    @IBOutlet weak var quantityLabel: UILabel!
     
-    func configure(name: String, itemCount: Int) {
+    
+    func configure(name: String, quantity: String) {
         nameLabel.text = name
-        itemCountLabel.text = "\(itemCount)"
+        quantityLabel.text = quantity
     }
 }

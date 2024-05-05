@@ -30,15 +30,25 @@
 		C1244C422BE331540099F313 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1244C412BE331540099F313 /* LocationsViewModel.swift */; };
 		C129FD0C2BDDC21B002440EB /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129FD0B2BDDC21B002440EB /* ProductService.swift */; };
 		C129FD0F2BDDC2BF002440EB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129FD0E2BDDC2BF002440EB /* Product.swift */; };
+		C1561E9A2BE71E3600690952 /* GroceryListsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1561E992BE71E3600690952 /* GroceryListsViewModel.swift */; };
+		C1561E9C2BE71FC600690952 /* GroceryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1561E9B2BE71FC600690952 /* GroceryListViewModel.swift */; };
+		C1561E9F2BE7E2C000690952 /* GroceryListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1561E9E2BE7E2C000690952 /* GroceryListCell.xib */; };
+		C1561EA02BE7E2C000690952 /* GroceryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1561E9D2BE7E2C000690952 /* GroceryListCell.swift */; };
+		C1561EA42BE7E8E500690952 /* CircleMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1561EA32BE7E8E500690952 /* CircleMember.swift */; };
+		C1561EA82BE7E98100690952 /* CircleMembersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1561EA72BE7E98100690952 /* CircleMembersViewController.xib */; };
+		C1561EA92BE7E98100690952 /* CircleMembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1561EA62BE7E98100690952 /* CircleMembersViewController.swift */; };
+		C1561EAB2BE7F10F00690952 /* CircleMemberService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1561EAA2BE7F10F00690952 /* CircleMemberService.swift */; };
+		C1561EAE2BE7F3FE00690952 /* CircleMemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1561EAD2BE7F3FE00690952 /* CircleMemberViewModel.swift */; };
+		C1561EB12BE7FC3C00690952 /* CircleMemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1561EB02BE7FC3C00690952 /* CircleMemberCell.xib */; };
+		C1561EB22BE7FC3C00690952 /* CircleMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1561EAF2BE7FC3C00690952 /* CircleMemberCell.swift */; };
 		C1D5A3C82BE46315007DCD53 /* GroceryListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5A3C62BE46315007DCD53 /* GroceryListsViewController.swift */; };
 		C1D5A3C92BE46315007DCD53 /* GroceryListsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1D5A3C72BE46315007DCD53 /* GroceryListsViewController.xib */; };
 		C1D5A3CF2BE46AF3007DCD53 /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5A3CE2BE46AF3007DCD53 /* GroceryList.swift */; };
 		C1D5A3D12BE46D1F007DCD53 /* GroceryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D5A3D02BE46D1F007DCD53 /* GroceryService.swift */; };
-		C1E3C90B2BE6FA7B00AD8BE3 /* GroceryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3C9092BE6FA7B00AD8BE3 /* GroceryListCell.swift */; };
-		C1E3C90C2BE6FA7B00AD8BE3 /* GroceryListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E3C90A2BE6FA7B00AD8BE3 /* GroceryListCell.xib */; };
+		C1E3C90B2BE6FA7B00AD8BE3 /* GroceryListsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3C9092BE6FA7B00AD8BE3 /* GroceryListsCell.swift */; };
+		C1E3C90C2BE6FA7B00AD8BE3 /* GroceryListsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E3C90A2BE6FA7B00AD8BE3 /* GroceryListsCell.xib */; };
 		C1E3C90F2BE7129900AD8BE3 /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3C90D2BE7129900AD8BE3 /* GroceryListViewController.swift */; };
 		C1E3C9102BE7129900AD8BE3 /* GroceryListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E3C90E2BE7129900AD8BE3 /* GroceryListViewController.xib */; };
-		C1E3C9122BE71D4D00AD8BE3 /* GroceryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3C9112BE71D4D00AD8BE3 /* GroceryListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,15 +76,25 @@
 		C129FD092BDD9D62002440EB /* Products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
 		C129FD0B2BDDC21B002440EB /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		C129FD0E2BDDC2BF002440EB /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		C1561E992BE71E3600690952 /* GroceryListsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroceryListsViewModel.swift; path = Expolist/GroceryList/ViewControllers/ViewModels/GroceryListsViewModel.swift; sourceTree = SOURCE_ROOT; };
+		C1561E9B2BE71FC600690952 /* GroceryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewModel.swift; sourceTree = "<group>"; };
+		C1561E9D2BE7E2C000690952 /* GroceryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListCell.swift; sourceTree = "<group>"; };
+		C1561E9E2BE7E2C000690952 /* GroceryListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroceryListCell.xib; sourceTree = "<group>"; };
+		C1561EA32BE7E8E500690952 /* CircleMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleMember.swift; sourceTree = "<group>"; };
+		C1561EA62BE7E98100690952 /* CircleMembersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleMembersViewController.swift; sourceTree = "<group>"; };
+		C1561EA72BE7E98100690952 /* CircleMembersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleMembersViewController.xib; sourceTree = "<group>"; };
+		C1561EAA2BE7F10F00690952 /* CircleMemberService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleMemberService.swift; sourceTree = "<group>"; };
+		C1561EAD2BE7F3FE00690952 /* CircleMemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleMemberViewModel.swift; sourceTree = "<group>"; };
+		C1561EAF2BE7FC3C00690952 /* CircleMemberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleMemberCell.swift; sourceTree = "<group>"; };
+		C1561EB02BE7FC3C00690952 /* CircleMemberCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleMemberCell.xib; sourceTree = "<group>"; };
 		C1D5A3C62BE46315007DCD53 /* GroceryListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListsViewController.swift; sourceTree = "<group>"; };
 		C1D5A3C72BE46315007DCD53 /* GroceryListsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroceryListsViewController.xib; sourceTree = "<group>"; };
 		C1D5A3CE2BE46AF3007DCD53 /* GroceryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryList.swift; sourceTree = "<group>"; };
 		C1D5A3D02BE46D1F007DCD53 /* GroceryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryService.swift; sourceTree = "<group>"; };
-		C1E3C9092BE6FA7B00AD8BE3 /* GroceryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListCell.swift; sourceTree = "<group>"; };
-		C1E3C90A2BE6FA7B00AD8BE3 /* GroceryListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroceryListCell.xib; sourceTree = "<group>"; };
+		C1E3C9092BE6FA7B00AD8BE3 /* GroceryListsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListsCell.swift; sourceTree = "<group>"; };
+		C1E3C90A2BE6FA7B00AD8BE3 /* GroceryListsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroceryListsCell.xib; sourceTree = "<group>"; };
 		C1E3C90D2BE7129900AD8BE3 /* GroceryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewController.swift; sourceTree = "<group>"; };
 		C1E3C90E2BE7129900AD8BE3 /* GroceryListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroceryListViewController.xib; sourceTree = "<group>"; };
-		C1E3C9112BE71D4D00AD8BE3 /* GroceryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +128,7 @@
 		C11FE0DE2BC6E413002D3BC3 /* Expolist */ = {
 			isa = PBXGroup;
 			children = (
+				C1561EA12BE7E73900690952 /* Circles */,
 				C1D5A3C42BE414A2007DCD53 /* GroceryList */,
 				C1244C382BE2F5B40099F313 /* Stores */,
 				C1244C282BDDD6710099F313 /* StartUp */,
@@ -232,6 +253,44 @@
 			path = Products;
 			sourceTree = "<group>";
 		};
+		C1561EA12BE7E73900690952 /* Circles */ = {
+			isa = PBXGroup;
+			children = (
+				C1561EAC2BE7F30800690952 /* ViewModels */,
+				C1561EA52BE7E95900690952 /* ViewControllers */,
+				C1561EA22BE7E8CB00690952 /* Models */,
+				C1561EAF2BE7FC3C00690952 /* CircleMemberCell.swift */,
+				C1561EB02BE7FC3C00690952 /* CircleMemberCell.xib */,
+			);
+			path = Circles;
+			sourceTree = "<group>";
+		};
+		C1561EA22BE7E8CB00690952 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1561EA32BE7E8E500690952 /* CircleMember.swift */,
+				C1561EAA2BE7F10F00690952 /* CircleMemberService.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C1561EA52BE7E95900690952 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1561EA62BE7E98100690952 /* CircleMembersViewController.swift */,
+				C1561EA72BE7E98100690952 /* CircleMembersViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C1561EAC2BE7F30800690952 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C1561EAD2BE7F3FE00690952 /* CircleMemberViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		C1D5A3C42BE414A2007DCD53 /* GroceryList */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,7 +316,8 @@
 		C1D5A3CA2BE46960007DCD53 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				C1E3C9112BE71D4D00AD8BE3 /* GroceryListViewModel.swift */,
+				C1561E992BE71E3600690952 /* GroceryListsViewModel.swift */,
+				C1561E9B2BE71FC600690952 /* GroceryListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -274,8 +334,10 @@
 		C1E3C9082BE6F8E200AD8BE3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C1E3C9092BE6FA7B00AD8BE3 /* GroceryListCell.swift */,
-				C1E3C90A2BE6FA7B00AD8BE3 /* GroceryListCell.xib */,
+				C1E3C9092BE6FA7B00AD8BE3 /* GroceryListsCell.swift */,
+				C1E3C90A2BE6FA7B00AD8BE3 /* GroceryListsCell.xib */,
+				C1561E9D2BE7E2C000690952 /* GroceryListCell.swift */,
+				C1561E9E2BE7E2C000690952 /* GroceryListCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -349,11 +411,14 @@
 				C1244C2D2BDDE2820099F313 /* Products.json in Resources */,
 				C1244C322BDDE6B50099F313 /* ProductTableCell.xib in Resources */,
 				C1E3C9102BE7129900AD8BE3 /* GroceryListViewController.xib in Resources */,
-				C1E3C90C2BE6FA7B00AD8BE3 /* GroceryListCell.xib in Resources */,
+				C1E3C90C2BE6FA7B00AD8BE3 /* GroceryListsCell.xib in Resources */,
 				C1244C3D2BE2F5FB0099F313 /* LocationsViewController.xib in Resources */,
 				C11FE0E92BC6E415002D3BC3 /* Assets.xcassets in Resources */,
+				C1561EA82BE7E98100690952 /* CircleMembersViewController.xib in Resources */,
 				C1D5A3C92BE46315007DCD53 /* GroceryListsViewController.xib in Resources */,
 				C1244C1F2BDDCF940099F313 /* ExpiredProductsViewController.xib in Resources */,
+				C1561E9F2BE7E2C000690952 /* GroceryListCell.xib in Resources */,
+				C1561EB12BE7FC3C00690952 /* CircleMemberCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,13 +452,15 @@
 			files = (
 				C1244C162BDDCA970099F313 /* ExpolistService.swift in Sources */,
 				C1244C192BDDCB600099F313 /* DateFormatter+Extensions.swift in Sources */,
+				C1561EA92BE7E98100690952 /* CircleMembersViewController.swift in Sources */,
 				C129FD0F2BDDC2BF002440EB /* Product.swift in Sources */,
 				C1D5A3D12BE46D1F007DCD53 /* GroceryService.swift in Sources */,
 				C1244C342BDDE81A0099F313 /* UITableView+Extensions.swift in Sources */,
-				C1E3C90B2BE6FA7B00AD8BE3 /* GroceryListCell.swift in Sources */,
+				C1E3C90B2BE6FA7B00AD8BE3 /* GroceryListsCell.swift in Sources */,
 				C1244C212BDDD0AF0099F313 /* Reusable.swift in Sources */,
+				C1561EAB2BE7F10F00690952 /* CircleMemberService.swift in Sources */,
 				C1244C372BE2F51B0099F313 /* UIView+Extensions.swift in Sources */,
-				C1E3C9122BE71D4D00AD8BE3 /* GroceryListViewModel.swift in Sources */,
+				C1561E9A2BE71E3600690952 /* GroceryListsViewModel.swift in Sources */,
 				C1244C2A2BDDD6BE0099F313 /* ExpolistTabBarController.swift in Sources */,
 				C1244C3C2BE2F5FB0099F313 /* LocationsViewController.swift in Sources */,
 				C1244C232BDDD19D0099F313 /* ViewController+Extension.swift in Sources */,
@@ -401,12 +468,17 @@
 				C11FE0E02BC6E413002D3BC3 /* AppDelegate.swift in Sources */,
 				C1D5A3C82BE46315007DCD53 /* GroceryListsViewController.swift in Sources */,
 				C1244C1E2BDDCF940099F313 /* ExpiredProductsViewController.swift in Sources */,
+				C1561E9C2BE71FC600690952 /* GroceryListViewModel.swift in Sources */,
 				C1244C422BE331540099F313 /* LocationsViewModel.swift in Sources */,
+				C1561EAE2BE7F3FE00690952 /* CircleMemberViewModel.swift in Sources */,
 				C1E3C90F2BE7129900AD8BE3 /* GroceryListViewController.swift in Sources */,
 				C1244C2C2BDDE01C0099F313 /* ExpiredProductsViewModel.swift in Sources */,
+				C1561EA42BE7E8E500690952 /* CircleMember.swift in Sources */,
 				C129FD0C2BDDC21B002440EB /* ProductService.swift in Sources */,
 				C1244C312BDDE6B50099F313 /* ProductTableCell.swift in Sources */,
 				C1244C3F2BE322A50099F313 /* StoreService.swift in Sources */,
+				C1561EB22BE7FC3C00690952 /* CircleMemberCell.swift in Sources */,
+				C1561EA02BE7E2C000690952 /* GroceryListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

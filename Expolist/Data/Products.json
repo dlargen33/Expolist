@@ -24,7 +24,7 @@
         "title": "Apples",
         "category": "Fruits & Vegetables",
         "description": "Honeycrsip Apple",
-        "expiration": "10/01/2024",
+        "expiration": "5/01/2024",
         "quantity": "1",
         "price": 1.00
     },
@@ -33,7 +33,7 @@
         "title": "Blueberries",
         "category": "Fruits & Vegetables",
         "description": "Blueberries Prepacked",
-        "expiration": "10/01/2024",
+        "expiration": "5/01/2024",
         "quantity": "6 Oz",
         "price": 1.00
     },
@@ -52,7 +52,7 @@
         "title": "Lettuce",
         "category": "Fruits & Vegetables",
         "description": "Iceberg Lettuce",
-        "expiration": "10/01/2024",
+        "expiration": "5/01/2024",
         "quantity": "1",
         "price": 1.99
     },
@@ -72,7 +72,7 @@
         "title": "Carrot",
         "category": "Fruits & Vegetables",
         "description": "Carrots",
-        "expiration": "10/01/2024",
+        "expiration": "3/01/2024",
         "quantity": "1",
         "price": 1.29
     },
@@ -82,7 +82,7 @@
         "title": "Gold Potatoes",
         "category": "Fruits & Vegetables",
         "description": "Signature Select Farms Potatoes",
-        "expiration": "10/01/2024",
+        "expiration": "5/01/2024",
         "quantity": "3 LB",
         "price": 1.29
     },
@@ -91,7 +91,7 @@
         "title": "Ground Beef",
         "category": "Meat & Seafood",
         "description": "Ground Beef Sirloin 90%",
-        "expiration": "5/01/2024",
+        "expiration": "2/01/2024",
         "quantity": "1.50 LB",
         "price": 9.74
     },
@@ -130,7 +130,7 @@
         "title": "White Bread",
         "category": "Bread & Bakery",
         "description": "Butternut White Bread",
-        "expiration": "7/01/2024",
+        "expiration": "5/10/2024",
         "quantity": "20 Oz",
         "price": 3.49
     },

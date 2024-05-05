@@ -8,22 +8,27 @@
 import Foundation
 import Combine
 
-class GroceryListViewModel {
+class GroceryListsViewModel {
     
     private var lists = [GroceryList]()
     private var groceryService = GroceryService()
     
-    var locationsSubject = PassthroughSubject< (), Never>()
+    var listsSubject = PassthroughSubject< (), Never>()
     var numberOfItems: Int {
         return lists.count
     }
     
     func load() {
         lists = groceryService.getLists()
-        locationsSubject.send(())
+        listsSubject.send(())
     }
     
     func list(at index: Int) -> GroceryList {
         return lists[index]
+    }
+    
+    func addList(list: GroceryList) {
+        groceryService.add(list: list)
+        load()
     }
 }

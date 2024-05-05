@@ -25,10 +25,44 @@ class ExpiredProductsViewController: UIViewController, Reusable {
     }
     
     private func setupUI() {
-        self.title = "Expired Food"
+        let titleLabel = UILabel()
+        titleLabel.isUserInteractionEnabled = true
+        titleLabel.textColor = .white
+        titleLabel.font = UIFont.systemFont(ofSize: 17, weight: .bold)
+        titleLabel.text = "Expired Food"
+        let longPress = UILongPressGestureRecognizer(target: self,
+                                                    action: #selector(self.clearLongPress(sender:)))
+        longPress.minimumPressDuration = 2.0
+        titleLabel.addGestureRecognizer(longPress)
+        
+        self.navigationItem.titleView = titleLabel
+        
         tableView.registerReusableCell(type: ProductTableCell.self)
         tableView.dataSource = self
         tableView.delegate = self
+    }
+    
+    @objc private func clearLongPress(sender: UILongPressGestureRecognizer) {
+        if sender.state == .began {
+            let alertController = UIAlertController(title: "Clear Saved Data?  This will require restarting the application.",
+                                                    message: "",
+                                                    preferredStyle: .alert)
+        
+            let saveAction = UIAlertAction(title: "Clear", style: .default) { [weak self] action in
+                guard let self = self else { return }
+                self.viewModel.clearAll()
+            }
+        
+            let cancelAction = UIAlertAction(title: "Cancel",
+                                             style: .default,
+                                             handler: { (action : UIAlertAction!) -> Void in })
+
+            alertController.addAction(saveAction)
+            alertController.addAction(cancelAction)
+            self.present(alertController,
+                         animated: true,
+                         completion: nil)
+        }
     }
 }
 

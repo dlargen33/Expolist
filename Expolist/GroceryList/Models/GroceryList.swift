@@ -8,11 +8,13 @@
 import Foundation
 
 struct GroceryItem: Codable {
+    var id = UUID()
     var name: String
-    var quantity: Int
+    var quantity: String
 }
 
 class GroceryList: Codable {
+    var id = UUID()
     var items = [GroceryItem]()
     var createdOn = Date()
     var name: String

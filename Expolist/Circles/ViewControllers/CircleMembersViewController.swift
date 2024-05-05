@@ -1,23 +1,25 @@
 //
-//  GroceryListViewController.swift
+//  CircleMembersViewController.swift
 //  Expolist
 //
-//  Created by Donald Largen on 5/2/24.
+//  Created by Donald Largen on 5/5/24.
 //
 
 import UIKit
 import Combine
 
-class GroceryListsViewController: UIViewController, Reusable {
+class CircleMembersViewController: UIViewController, Reusable {
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var noItemsView: UIView!
-    @IBOutlet weak var addListButton: UIButton!
+    @IBOutlet weak var addButton: UIButton!
     
-    private let viewModel = GroceryListsViewModel()
+    private var viewModel = CircleMemberViewModel()
     private var cancellables = Set<AnyCancellable>()
     
-    class func get() -> GroceryListsViewController {
-        return GroceryListsViewController.fromNib()
+    class func get() -> CircleMembersViewController {
+        let vc:CircleMembersViewController = CircleMembersViewController.fromNib()
+        return vc
     }
     
     override func viewDidLoad() {
@@ -28,59 +30,54 @@ class GroceryListsViewController: UIViewController, Reusable {
     }
     
     private func setupUI() {
-        self.title = "Grocery Lists"
-        noItemsView.isHidden = true
-        tableView.isHidden = false
-    
+        self.title = "Circle Members"
         let image = UIImage(systemName: "plus.square.on.square")?.withTintColor(.white)
         let barItem = UIBarButtonItem(image: image,
                                       style: .plain,
                                       target: self,
                                       action: #selector(self.addButtonTouched(_:)))
         self.navigationItem.rightBarButtonItem = barItem
-        tableView.registerReusableCell(type: GroceryListsCell.self)
+        tableView.registerReusableCell(type: CircleMemberCell.self)
+        
     }
     
     private func bind() {
         tableView.dataSource = self
-        tableView.delegate = self
         
-        viewModel.listsSubject.sink { [weak self]() in
+        viewModel.membersSubject.sink { [weak self] in
             guard let self else { return }
             guard self.viewModel.numberOfItems > 0 else {
-                self.noItemsView.isHidden = false
                 self.tableView.isHidden = true
+                self.noItemsView.isHidden = false
                 return
             }
-            self.noItemsView.isHidden = true
-            self.tableView.isHidden = false
-            self.tableView.reloadData()
             
+            self.tableView.isHidden = false
+            self.noItemsView.isHidden = true
+            self.tableView.reloadData()
         }.store(in: &cancellables)
         
-        addListButton.addTarget(self,
-                                action: #selector(self.addButtonTouched(_:)),
-                                for: .touchUpInside)
+        addButton.addTarget(self,
+                            action: #selector(self.addButtonTouched(_:)),
+                            for: .touchUpInside)
     }
     
     @objc private func addButtonTouched(_ sender: Any) {
-        let alertController = UIAlertController(title: "Add New Grocery List",
+        let alertController = UIAlertController(title: "Add Member",
                                                 message: "",
                                                 preferredStyle: .alert)
     
         alertController.addTextField { (textField : UITextField!) -> Void in
-            textField.placeholder = "Enter List Name"
+            textField.placeholder = "Enter Name"
         }
         
         let saveAction = UIAlertAction(title: "Save", style: .default) { [weak self] action in
             guard let self = self,
-                  let listNameTextField = alertController.textFields?[0],
-                  let name = listNameTextField.text,
-                  !name.isEmpty else { return }
+                  let nameTextField = alertController.textFields?[0],
+                  let name = nameTextField.text else { return }
             
-            print("name \(name)")
-            let newList = GroceryList(name: name)
-            self.viewModel.addList(list: newList)
+            let newMember = CircleMember(name: name)
+            self.viewModel.addMember(member: newMember)
         }
     
         let cancelAction = UIAlertAction(title: "Cancel",
@@ -95,7 +92,7 @@ class GroceryListsViewController: UIViewController, Reusable {
     }
 }
 
-extension GroceryListsViewController: UITableViewDataSource {
+extension CircleMembersViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfItems
@@ -103,27 +100,19 @@ extension GroceryListsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: GroceryListsCell = tableView.dequeueReusableCell(indexPath: indexPath)
-        let list = viewModel.list(at: indexPath.row)
-        cell.configure(name: list.name,
-                       itemCount: list.items.count)
+        let cell: CircleMemberCell = tableView.dequeueReusableCell(indexPath: indexPath)
+        let member = viewModel.item(at: indexPath.row)
+        cell.nameLabel.text = member.name
         return cell
     }
 }
 
-extension GroceryListsViewController: UITableViewDelegate {
+extension CircleMembersViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
-        let list = viewModel.list(at: indexPath.row)
-        let vc: GroceryListViewController =  GroceryListViewController.get(list: list)
-        vc.delegate = self
-        self.navigationController?.pushViewController(vc, animated: true)
+        
+        //show screen that will allow the user to associate a list with a list of users.
     }
-}
-
-extension GroceryListsViewController: GroceryListViewControllerDelegate {
-    func itemAdded() {
-        self.viewModel.load()
-    }
+    
 }

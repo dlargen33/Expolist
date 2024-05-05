@@ -26,5 +26,10 @@ class ExpiredProductsViewModel {
         return products[at]
     }
     
+    func clearAll() {
+        GroceryService().removeAll()
+        CircleMemberService().removeAll()
+    }
+    
 }
 

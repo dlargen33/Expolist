@@ -42,10 +42,24 @@ class ExpolistTabBarController: UITabBarController {
         return nav
     }()
     
+    lazy private var circleMembers: UINavigationController = {
+        let vc: CircleMembersViewController = CircleMembersViewController.get()
+        let barItem = UITabBarItem(title: "Members",
+                                   image: UIImage(systemName: "person.fill"),
+                                   tag: 3)
+        
+        vc.tabBarItem = barItem
+        let nav = UINavigationController(rootViewController: vc)
+        return nav
+    }()
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        self.viewControllers = [expiredProductsVC, locationsVC, groceryListVC]
+        self.viewControllers = [expiredProductsVC,
+                                locationsVC,
+                                groceryListVC,
+                                circleMembers]
     }
     
     override func viewDidLoad() {

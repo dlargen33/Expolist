@@ -66,6 +66,22 @@ extension ExpolistService {
             print(error)
             return false
         }
-        
+    }
+    
+    @discardableResult
+    func removeContent(fileName: String) -> Bool {
+        do {
+            let directoryURL = FileManager.default.urls(for: .documentDirectory,
+                                                        in: .userDomainMask)[0]
+            let fileURL = URL(fileURLWithPath: fileName,
+                              relativeTo: directoryURL)
+            
+            try FileManager.default.removeItem(at: fileURL)
+            return true
+        }
+        catch {
+            print(error)
+            return false
+        }
     }
 }

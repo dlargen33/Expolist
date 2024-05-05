@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GroceryListViewController" customModule="Expolist" customModuleProvider="target">
             <connections>
-                <outlet property="addButtom" destination="sFJ-Op-b9c" id="LGc-nu-KZp"/>
+                <outlet property="addButton" destination="sFJ-Op-b9c" id="LGc-nu-KZp"/>
                 <outlet property="noItemsView" destination="dCt-gU-ded" id="RLK-0V-HRi"/>
                 <outlet property="tableView" destination="SJM-pZ-VYf" id="EOE-Pf-irj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
